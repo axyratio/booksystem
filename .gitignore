@@ -1,0 +1,5 @@
+# ignore node_modules in client directory
+client/node_modules/
+server/node_modules/
+test_sequelize/
+
