@@ -1,9 +1,8 @@
 // src/component/CardView.tsx
-import StarHalfRoundedIcon from '@mui/icons-material/StarHalfRounded';
+import StarHalfRoundedIcon from "@mui/icons-material/StarHalfRounded";
 import StarIcon from "@mui/icons-material/StarRateRounded";
 import type { Theme } from "@mui/material/styles";
-import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
-
+import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
 
 import {
   Avatar,
@@ -255,11 +254,7 @@ const CardBrowse = ({ items, rating }: CardBrowseProps) => {
     const hasHalfStar = star % 1 !== 0;
     for (let i = 0; i < fullStars; i++) {
       starArr.push(
-        <StarIcon
-          key={i}
-          fontSize="medium"
-          sx={{ color: "text.primary" }}
-        />
+        <StarIcon key={i} fontSize="medium" sx={{ color: "text.primary" }} />
       );
     }
     if (hasHalfStar) {
@@ -337,47 +332,58 @@ const CardBrowse = ({ items, rating }: CardBrowseProps) => {
               minWidth: 0,
             }}
           >
-            <CardContent sx={{ display: "flex", flexDirection: "column", height: "100%", justifyContent: "space-between" }}>
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+                justifyContent: "space-between",
+              }}
+            >
               <Box>
                 <Typography
-                gutterBottom
-                variant="body1"
-                fontWeight={600}
-                component="div"
-                m={0}
-                flexWrap="wrap"
-                sx={{
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                {items.title}
-              </Typography>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                whiteSpace="wrap"
-                sx={{
-                  display: "-webkit-box",
-                  WebkitLineClamp: 1,
-                  WebkitBoxOrient: "vertical",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                }}
-              >
-                {items.author[0]}
-              </Typography>
+                  gutterBottom
+                  variant="body1"
+                  fontWeight={600}
+                  component="div"
+                  m={0}
+                  flexWrap="wrap"
+                  sx={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  {items.title}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  whiteSpace="wrap"
+                  sx={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 1,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {items.author[0]}
+                </Typography>
               </Box>
 
-              <Box sx={{
-                display: "flex",
-                whiteSpace: "nowrap",
-                alignItems: "center",
-                flexDirection: "row",
-              }} >{renderStar()}</Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  whiteSpace: "nowrap",
+                  alignItems: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {renderStar()}
+              </Box>
             </CardContent>
           </Box>
         </Box>
@@ -402,7 +408,9 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
       starArr.push(<StarIcon key={i} fontSize="medium" />);
     }
     if (star % 1 !== 0) {
-      starArr.push(<StarHalfRoundedIcon key={starArr.length} fontSize="medium" />);
+      starArr.push(
+        <StarHalfRoundedIcon key={starArr.length} fontSize="medium" />
+      );
     }
     return starArr;
   };
@@ -418,7 +426,7 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
           display: "flex",
           flexDirection: "row",
           maxWidth: 700,
-          
+
           flexShrink: 1,
           borderRadius: 0,
           transition: "transform 0.3s ease", // เพิ่ม transition
@@ -453,7 +461,6 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
               userSelect: "none",
               WebkitUserDrag: "none",
               flexShrink: 1,
-              
             }}
           />
 
@@ -535,33 +542,33 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
                 </Typography>
                 {items.ended_date}
               </Typography>
-                {items.status === "Returned" ? (
-                  <Button
-                    variant="outlined"
-                    size="small"
-                    sx={{
-                      mt: 1,
-                      width: "fit-content",
-                      color: "success.main",
-                      borderColor: "success.main",
-                    }}
-                  >
-                    Returned
-                  </Button>
-                ) : (
-                  <Button
-                    variant="outlined"
-                    size="small"
-                    sx={{
-                      mt: 1,
-                      width: "fit-content",
-                      color: "warning.main",
-                      borderColor: "warning.main",
-                    }}
-                  >
-                    In Use
-                  </Button>
-                )}
+              {items.status === "Returned" ? (
+                <Button
+                  variant="outlined"
+                  size="small"
+                  sx={{
+                    mt: 1,
+                    width: "fit-content",
+                    color: "success.main",
+                    borderColor: "success.main",
+                  }}
+                >
+                  Returned
+                </Button>
+              ) : (
+                <Button
+                  variant="outlined"
+                  size="small"
+                  sx={{
+                    mt: 1,
+                    width: "fit-content",
+                    color: "warning.main",
+                    borderColor: "warning.main",
+                  }}
+                >
+                  In Use
+                </Button>
+              )}
             </CardContent>
           </Box>
         </Box>
@@ -576,6 +583,7 @@ const CardAuthor = ({ item }: { item: Item }) => {
       sx={{
         backgroundColor: "background.default",
         boxShadow: "0px 0px 0px 0px",
+        maxWidth: 250,
       }}
     >
       <Box
@@ -594,7 +602,12 @@ const CardAuthor = ({ item }: { item: Item }) => {
           }}
         >
           <Avatar
-            sx={{ width: 40, height: 40 }}
+            sx={{
+              width: 40,
+              height: 40,
+              border: "solid 1px",
+              borderColor: "divider",
+            }}
             alt="Remy Sharp"
             src={item.image_url}
           />
@@ -605,6 +618,8 @@ const CardAuthor = ({ item }: { item: Item }) => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
           }}
         >
           <Typography
@@ -613,6 +628,14 @@ const CardAuthor = ({ item }: { item: Item }) => {
             variant="body1"
             fontWeight={600}
             component="div"
+            sx={{
+              WebkitLineClamp: 1,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+              display: "-webkit-box",
+            }}
           >
             {item.author[0]}
           </Typography>
