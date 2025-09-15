@@ -28,7 +28,6 @@ export type Item = {
 
 type CardPalette = Theme["palette"]["cards"][string];
 
-
 // ------- CardForYou -------
 type CardForYouProps = {
   item: Item; // รับข้อมูลหนังสือ 1 รายการ
@@ -226,7 +225,6 @@ const CardForYou = ({ item, rating = 4.5, bg }: CardForYouProps) => {
 
 // ------- CardBrowse (ถ้าจะใช้แสดงหลายรายการในภายหลัง) -------
 
-
 export type CardBrowseProps = {
   items: Item; // ไม่บังคับส่ง ตอนนี้ยังไม่แสดงอะไร ถ้าจะใช้ภายหลังสามารถ map ได้
   rating: number;
@@ -366,28 +364,29 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
     <>
       <Card
         sx={{
-          
+          alignItems: "flex-start",
+          justifyContent: "flex-start",
           boxShadow: "none",
           backgroundColor: "transparent",
           display: "flex",
           flexDirection: "row",
-          maxWidth: 450,
+          maxWidth: 700,
           
           flexShrink: 1,
-          borderRadius: 0
+          borderRadius: 0,
+          transition: "transform 0.3s ease", // เพิ่ม transition
+          "&:hover": {
+            transform: "scale(0.98)", // ย่อเล็กเมื่อ hover (หรือเปลี่ยน trigger เป็น container overflow)
+          },
         }}
       >
         <Box
           sx={{
-            direction: "row",
             display: "flex",
+            flexDirection: { xs: "column", sm: "row" }, // xs: column, sm+: row
             justifyContent: "center",
             alignContent: "center",
             overflow: "hidden",
-            // [theme.breakpoints.down("sm")]: {
-            //   gap: 2,
-            //   flexDirection: "column",
-            // }
           }}
         >
           <CardMedia
@@ -399,38 +398,49 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
             alt={items.title}
             image={items.image_url}
             sx={{
-              width: { xs: 150, sm: 120 },   // ✅ จอเล็กกินเต็ม container, จอใหญ่คงที่
-              height: "auto",                   // ✅ ให้ภาพรักษาอัตราส่วน
+              width: { xs: "100%", sm: 110 },
+              height: { xs: "auto", sm: 150 }, // กำหนดขนาดสูงสุด
               objectFit: "cover",
               borderRadius: 0,
               pointerEvents: "auto",
               userSelect: "none",
               WebkitUserDrag: "none",
-              flexShrink: 1,                     // ✅ ให้บีบตัวเองเมื่อพื้นที่ไม่พอ
-              p: 2,
+              flexShrink: 1,
+              
             }}
           />
+
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
               overflow: "hidden",
-              p: 1,
               height: "100%",
               flex: "1 1 auto",
               minWidth: 0,
             }}
           >
-            <CardContent sx={{ p: 1 }}>
+            <CardContent
+              sx={{
+                p: 1,
+                display: "flex",
+                flexDirection: "column",
+                flexWrap: "nowrap",
+                height: "100%",
+              }}
+            >
               <Typography
                 gutterBottom
                 variant="body1"
                 fontWeight={600}
+                fontSize={18}
                 component="div"
                 m={0}
                 flexWrap="wrap"
                 sx={{
+                  whiteSpace: "nowrap",
+
                   overflow: "hidden",
                   textOverflow: "ellipsis",
                   display: "-webkit-box",
@@ -446,16 +456,65 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
                 whiteSpace="wrap"
                 sx={{
                   display: "-webkit-box",
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                  lineHeight: 1.2, // Make line height tighter
+                  mb: 0.2,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                <Typography component="span" sx={{ mr: 1 }} fontWeight={500}>
+                  Start Date
+                </Typography>
+                {items.started_date}
+              </Typography>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                whiteSpace="wrap"
+                sx={{
+                  whiteSpace: "nowrap",
+                  display: "-webkit-box",
                   WebkitLineClamp: 2,
                   WebkitBoxOrient: "vertical",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
-
+                  lineHeight: 1.2, // Make line height tighter
+                  mt: 0,
                 }}
               >
-                {items.started_date} - {items.ended_date}
+                <Typography component="span" sx={{ mr: 1 }} fontWeight={500}>
+                  End Date
+                </Typography>
+                {items.ended_date}
               </Typography>
-
+                {items.status === "Returned" ? (
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    sx={{
+                      mt: 1,
+                      width: "fit-content",
+                      color: "success.main",
+                      borderColor: "success.main",
+                    }}
+                  >
+                    Returned
+                  </Button>
+                ) : (
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    sx={{
+                      mt: 1,
+                      width: "fit-content",
+                      color: "warning.main",
+                      borderColor: "warning.main",
+                    }}
+                  >
+                    In Use
+                  </Button>
+                )}
             </CardContent>
           </Box>
         </Box>
@@ -463,7 +522,6 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
     </>
   );
 };
-
 
 const CardAuthor = ({ item }: { item: Item }) => {
   return (
@@ -478,7 +536,7 @@ const CardAuthor = ({ item }: { item: Item }) => {
           display: "flex",
           flexDirection: "row",
           gap: 1,
-          py: .5
+          py: 0.5,
         }}
       >
         <Box
@@ -488,11 +546,11 @@ const CardAuthor = ({ item }: { item: Item }) => {
             justifyContent: "center",
           }}
         >
-           <Avatar
-          sx={{ width: 40, height: 40 }}
-          alt="Remy Sharp"
-          src={item.image_url}
-        />
+          <Avatar
+            sx={{ width: 40, height: 40 }}
+            alt="Remy Sharp"
+            src={item.image_url}
+          />
         </Box>
         <Box
           sx={{
@@ -502,7 +560,13 @@ const CardAuthor = ({ item }: { item: Item }) => {
             alignItems: "center",
           }}
         >
-          <Typography m={0}  gutterBottom variant="body1" fontWeight={600} component="div">
+          <Typography
+            m={0}
+            gutterBottom
+            variant="body1"
+            fontWeight={600}
+            component="div"
+          >
             {item.author}
           </Typography>
         </Box>

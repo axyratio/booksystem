@@ -5,6 +5,7 @@ import Home from "./layout/HomeLayout.tsx";
 import VerifyLayout from "./layout/OtpLayout";
 import { Recover, RecoverConfirmOtp } from "./layout/RecoverLayout.jsx";
 import Profile from "./view/Profile.tsx";
+import ProfileLayout from "./layout/ProfileLayout.tsx";
 
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
       />
       <Route path="/profile" element={
           <RequireAuth>
-            <Profile />
+            <ProfileLayout />
           </RequireAuth>
         } 
       />

@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import ProfileView from "../component/ProfileView";
+import {ProfileView} from "../component/ProfileView";
 
 export type BookHistoryItem = {
   id: number;
@@ -8,7 +8,8 @@ export type BookHistoryItem = {
   image_url: string;
   author: string;
   rating: number;
-started_date: string;
+  status: string;
+  started_date: string;
   ended_date: string;
 };
 
@@ -43,6 +44,7 @@ const bookData: BookHistoryItem[] = [
     author: "Paulo Coelho",
     started_date: "2020-01-01",
     ended_date: "2020-02-01",
+    status: "Returned",
   },
   {
     id: 2,
@@ -54,6 +56,7 @@ const bookData: BookHistoryItem[] = [
     author: "Charles Duhigg",
     started_date: "2020-02-01",
     ended_date: "2020-03-01",
+    status: "Returned",
   },
   {
     id: 3,
@@ -65,6 +68,7 @@ const bookData: BookHistoryItem[] = [
     author: "J.D. Salinger",
     started_date: "2020-03-01",
     ended_date: "2020-04-01",
+    status: "Returned",
   },
   {
     id: 4,
@@ -76,6 +80,7 @@ const bookData: BookHistoryItem[] = [
     author: "Harper Lee",
     started_date: "2020-04-01",
     ended_date: "2020-05-01",
+    status: "Returned",
   },
   {
     id: 5,
@@ -87,6 +92,7 @@ const bookData: BookHistoryItem[] = [
     author: "F. Scott Fitzgerald",
     started_date: "2020-05-01",
     ended_date: "2020-06-01",
+    status: "Returned",
   },
   {
     id: 6,
@@ -98,6 +104,7 @@ const bookData: BookHistoryItem[] = [
     author: "George Orwell",
     started_date: "2020-06-01",
     ended_date: "2020-07-01",
+    status: "In Use",
   },
 ]
 

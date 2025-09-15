@@ -15,7 +15,7 @@ const HomeLayout = () => {
             }}
         >
              <Home />
-            <Outlet />
+            
         </Container>
            
         </>

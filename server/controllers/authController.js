@@ -4,7 +4,6 @@ const { User, Role, Otp } = require("../models");
 const { Op, where } = require("sequelize");
 const validate = require("../validators/validateAuth");
 const { requestOtp } = require("../service/otp");
-const user = require("../../test_sequelize/models/user");
 // REGISTER
 const register = async (req, res) => {
   const { firstname, lastname, email, password, username } = req.body;
@@ -37,6 +36,7 @@ const register = async (req, res) => {
         password: hashedPassword,
         is_active: false,
       },
+      
     {
       where: { user_id: existingUser.user_id }
     })
