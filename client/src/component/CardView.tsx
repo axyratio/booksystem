@@ -1,7 +1,9 @@
 // src/component/CardView.tsx
-import StarHalfIcon from "@mui/icons-material/StarHalf";
+import StarHalfRoundedIcon from '@mui/icons-material/StarHalfRounded';
 import StarIcon from "@mui/icons-material/StarRateRounded";
 import type { Theme } from "@mui/material/styles";
+import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
+
 
 import {
   Avatar,
@@ -20,10 +22,10 @@ import { useState } from "react";
 export type Item = {
   id: number;
   title: string;
-  description: string;
   image_url: string;
-  author: string;
+  author: string[];
   rating: number;
+  genre: string;
 };
 
 type CardPalette = Theme["palette"]["cards"][string];
@@ -42,7 +44,10 @@ const CardForYou = ({ item, rating = 4.5, bg }: CardForYouProps) => {
 
   const renderStar = () => {
     const starArr = [];
-    for (let i = 0; i < Math.floor(star); i++) {
+    const maxStars = 5;
+    const fullStars = Math.floor(star);
+    const hasHalfStar = star % 1 !== 0;
+    for (let i = 0; i < fullStars; i++) {
       starArr.push(
         <StarIcon
           key={i}
@@ -51,9 +56,19 @@ const CardForYou = ({ item, rating = 4.5, bg }: CardForYouProps) => {
         />
       );
     }
-    if (star % 1 !== 0) {
+    if (hasHalfStar) {
       starArr.push(
-        <StarHalfIcon
+        <StarHalfRoundedIcon
+          key={starArr.length}
+          fontSize="medium"
+          sx={{ color: "primary.contrastText" }}
+        />
+      );
+    }
+    const emptyStars = maxStars - fullStars - (hasHalfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      starArr.push(
+        <StarBorderRoundedIcon
           key={starArr.length}
           fontSize="medium"
           sx={{ color: "primary.contrastText" }}
@@ -150,7 +165,7 @@ const CardForYou = ({ item, rating = 4.5, bg }: CardForYouProps) => {
                 color: "primary.contrastText",
               }}
             >
-              {item.description}
+              {item.author[0]}
             </Typography>
             <Box
               sx={{
@@ -235,11 +250,36 @@ const CardBrowse = ({ items, rating }: CardBrowseProps) => {
 
   const renderStar = () => {
     const starArr = [];
-    for (let i = 0; i < Math.floor(star); i++) {
-      starArr.push(<StarIcon key={i} fontSize="medium" />);
+    const maxStars = 5;
+    const fullStars = Math.floor(star);
+    const hasHalfStar = star % 1 !== 0;
+    for (let i = 0; i < fullStars; i++) {
+      starArr.push(
+        <StarIcon
+          key={i}
+          fontSize="medium"
+          sx={{ color: "text.primary" }}
+        />
+      );
     }
-    if (star % 1 !== 0) {
-      starArr.push(<StarHalfIcon key={starArr.length} fontSize="medium" />);
+    if (hasHalfStar) {
+      starArr.push(
+        <StarHalfRoundedIcon
+          key={starArr.length}
+          fontSize="medium"
+          sx={{ color: "text.primary" }}
+        />
+      );
+    }
+    const emptyStars = maxStars - fullStars - (hasHalfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      starArr.push(
+        <StarBorderRoundedIcon
+          key={starArr.length}
+          fontSize="medium"
+          sx={{ color: "primary.contrastText" }}
+        />
+      );
     }
     return starArr;
   };
@@ -297,8 +337,9 @@ const CardBrowse = ({ items, rating }: CardBrowseProps) => {
               minWidth: 0,
             }}
           >
-            <CardContent sx={{ p: 1 }}>
-              <Typography
+            <CardContent sx={{ display: "flex", flexDirection: "column", height: "100%", justifyContent: "space-between" }}>
+              <Box>
+                <Typography
                 gutterBottom
                 variant="body1"
                 fontWeight={600}
@@ -321,16 +362,22 @@ const CardBrowse = ({ items, rating }: CardBrowseProps) => {
                 whiteSpace="wrap"
                 sx={{
                   display: "-webkit-box",
-                  WebkitLineClamp: 2,
+                  WebkitLineClamp: 1,
                   WebkitBoxOrient: "vertical",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
                 }}
               >
-                {items.author}
+                {items.author[0]}
               </Typography>
+              </Box>
 
-              <Box>{renderStar()}</Box>
+              <Box sx={{
+                display: "flex",
+                whiteSpace: "nowrap",
+                alignItems: "center",
+                flexDirection: "row",
+              }} >{renderStar()}</Box>
             </CardContent>
           </Box>
         </Box>
@@ -355,7 +402,7 @@ const CardHistory = ({ items, rating }: CardHistoryProps) => {
       starArr.push(<StarIcon key={i} fontSize="medium" />);
     }
     if (star % 1 !== 0) {
-      starArr.push(<StarHalfIcon key={starArr.length} fontSize="medium" />);
+      starArr.push(<StarHalfRoundedIcon key={starArr.length} fontSize="medium" />);
     }
     return starArr;
   };
@@ -567,7 +614,7 @@ const CardAuthor = ({ item }: { item: Item }) => {
             fontWeight={600}
             component="div"
           >
-            {item.author}
+            {item.author[0]}
           </Typography>
         </Box>
       </Box>

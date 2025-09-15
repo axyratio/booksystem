@@ -86,6 +86,7 @@ const ProfileView = ({ items, bookItems }: ProfileViewProps) => {
           value="logout"
           name="logout"
           onClick={handleClick}
+          sx={{ p: 0, minWidth: "auto"}}
         >
           <LogoutRounded
             sx={{ color: "info.contrastText", cursor: "pointer" }}

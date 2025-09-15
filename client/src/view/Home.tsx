@@ -4,14 +4,18 @@ import { useEffect, useRef, useState } from "react";
 import { CardAuthor, CardBrowse, CardForYou } from "../component/CardView";
 import Header from "../component/Header";
 
+import booksData from "../data/all_books.json";
+
+  
+
 
 export type Item = {
   id: number;
   title: string;
-  description: string;
   image_url: string;
-  author: string;
+  author: string[];
   rating: number;
+  genre: string;
 };
 
 export type DataState = Item[];
@@ -24,97 +28,96 @@ type CardPalette = Theme["palette"]["cards"][string];
 const mockData = [
   {
     id: 1,
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    description:
-      "A story about following your dreams. A story about following your dreams. A story about following your dreams. A story about following your dreams. A story about following your dreams.",
-    image_url: "https://picsum.photos/200/300?random=1",
-    rating: 4.7,
+    title: "Frankenstein or The Modern Prometheus",
+    author: ["Mary Shelley"],
+    image_url: "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+    rating: 3,
+    genre: "science"
   },
   {
     id: 2,
-    title: "The Name of the Rose",
-    author: "Umberto Eco",
-    description: "A medieval murder mystery in an abbey.",
-    image_url: "https://picsum.photos/200/300?random=2",
-    rating: 4.4,
-  },
-  {
-    id: 3,
-    title: "The Hitchhiker's Guide to the Galaxy",
-    author: "Douglas Adams",
-    description: "Sci-fi comedy about the adventures of Arthur Dent.",
-    image_url: "https://picsum.photos/200/300?random=3",
-    rating: 4.8,
-  },
-  {
-    id: 4,
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    description: "A classic of modern American literature.",
-    image_url: "https://picsum.photos/200/300?random=4",
-    rating: 4.9,
-  },
-  {
-    id: 20,
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    description: "A classic of modern American literature.",
-    image_url: "https://picsum.photos/200/300?random=4",
-    rating: 4.9,
-  },
-
-];
-
-const mockData2 = [
-  {
-    id: 1,
-    title: "The Brief Wondrous Life of Oscar Wao",
-    author: "Junot D az",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=5",
-    rating: 4.2,
-  },
-  {
-    id: 2,
-    title: "The Nightingale",
-    author: "Kristin Hannah",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=6",
+    title: "Brave New World",
+    author: ["Aldous Huxley"],
+    image_url: "https://covers.openlibrary.org/b/id/8231823-L.jpg",
     rating: 4.5,
+    genre: "science"
   },
   {
     id: 3,
-    title: "The Hate U Give",
-    author: "Angie Thomas",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=7",
-    rating: 4.8,
+    title: "The Invisible Man",
+    author: ["H. G. Wells"],
+    image_url: "https://covers.openlibrary.org/b/id/6419199-L.jpg",
+    rating: 0,
+    genre: "science"
   },
   {
     id: 4,
-    title: "The Poppy War",
-    author: "R.F. Kuang",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=8",
-    rating: 4.9,
+    title: "De rerum natura",
+    author: ["Titus Lucretius Carus"],
+    image_url: "https://covers.openlibrary.org/b/id/566208-L.jpg",
+    rating: 0,
+    genre: "science"
   },
   {
     id: 5,
-    title: "The Seven Husbands of Evelyn Hugo",
-    author: "Taylor Jenkins Reid",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=9",
-    rating: 4.7,
+    title: "Le Tour du Monde en Quatre-Vingts Jours",
+    author: ["Jules Verne"],
+    image_url: "https://covers.openlibrary.org/b/id/6976035-L.jpg",
+    rating: 0,
+    genre: "science"
   },
+];
+
+
+const mockData2 = [
   {
     id: 6,
-    title: "The Song of Achilles",
-    author: "Madeline Miller",
-    description: "A story about the struggles of the immigrant experience.",
-    image_url: "https://picsum.photos/200/300?random=10",
-    rating: 4.1,
+    title: "Two years before the mast",
+    author: ["Richard Henry Dana"],
+    image_url: "https://covers.openlibrary.org/b/id/8245243-L.jpg",
+    rating: 4.5,
+    genre: "science"
   },
+  {
+    id: 7,
+    title: "Houghton Mifflin Science California",
+    author: ["Houghton Mifflin Company Staff"],
+    image_url: "https://covers.openlibrary.org/b/id/12746894-L.jpg",
+    rating: 4.5,
+    genre: "science"
+  },
+  {
+    id: 8,
+    title: "History",
+    author: ["Herodotus"],
+    image_url: "https://covers.openlibrary.org/b/id/9829028-L.jpg",
+    rating: 4.5,
+    genre: "science"
+  },
+  {
+    id: 9,
+    title: "Houghton Mifflin Science Leveled Readers",
+    author: ["Houghton Mifflin Company Staff"],
+    image_url: "https://covers.openlibrary.org/b/id/12917356-L.jpg",
+    rating: 4.5,
+    genre: "science"
+  },
+  {
+    id: 10,
+    title: "[William Wheeler Hubbell, authorized to apply for patents.]",
+    author: ["United States. Congress. Senate. Committee on Patents"],
+    image_url: "https://covers.openlibrary.org/b/id/10200621-L.jpg",
+    rating: 4.5,
+    genre: "science"
+  },
+  {
+    id: 11,
+    title: "The principall navigations, voiages, and discoveries of the English nations",
+    author: ["Richard Hakluyt", "Jack Beeching", "Richard David", "Edmund Goldsmid"],
+    image_url: "https://covers.openlibrary.org/b/id/6052194-L.jpg",
+    rating: 4.5,
+    genre: "science"
+  }
 ];
 
 // ... import เดิมทั้งหมด
@@ -125,12 +128,18 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const theme = useTheme();
 
+  
+
 
   // drag-to-scroll เดิม
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(0);
   const [startScrollLeft, setStartScrollLeft] = useState(0);
+
+
+
+
 
   const myTheme: CardPalette[] = [
     theme.palette.cards.sky,

@@ -1,0 +1,855 @@
+[
+    {
+        "title": "Frankenstein or The Modern Prometheus",
+        "authors": [
+            "Mary Shelley"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Brave New World",
+        "authors": [
+            "Aldous Huxley"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8231823-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "The Invisible Man",
+        "authors": [
+            "H. G. Wells"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6419199-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "De rerum natura",
+        "authors": [
+            "Titus Lucretius Carus"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/566208-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Le Tour du Monde en Quatre-Vingts Jours",
+        "authors": [
+            "Jules Verne"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6976035-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Two years before the mast",
+        "authors": [
+            "Richard Henry Dana"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8245243-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Houghton Mifflin Science California",
+        "authors": [
+            "Houghton Mifflin Company Staff"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12746894-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "The Island of Dr. Moreau",
+        "authors": [
+            "H. G. Wells",
+            "Fiona Beddall",
+            "Dobbs",
+            "Fabrizio Fiorentino",
+            "David Domínguez",
+            "Jonathan Kent",
+            "Margaret Atwood",
+            "Judit Lligonya Tenasen",
+            "Manuel Rivas Cabezuelo",
+            "Amaia Gurbindo",
+            "Judit Lligonya Tenas",
+            "Marta Seoane Rebollo"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/968312-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "History",
+        "authors": [
+            "Herodotus"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/9829028-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Houghton Mifflin Science Leveled Readers",
+        "authors": [
+            "Houghton Mifflin Company Staff"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12917356-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "[William Wheeler Hubbell, authorized to apply for patents.]",
+        "authors": [
+            "United States. Congress. Senate. Committee on Patents"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/10200621-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "The principall navigations, voiages, and discoveries of the English nations",
+        "authors": [
+            "Richard Hakluyt",
+            "Jack Beeching",
+            "Richard David",
+            "Edmund Goldsmid"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6052194-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "On the origin of species by means of natural selection",
+        "authors": [
+            "Charles Darwin"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/7153600-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Principles of Anatomy and Physiology",
+        "authors": [
+            "Gerard J. Tortora",
+            "Bryan H. Derrickson",
+            "Brendan Burkett",
+            "Danielle Dye",
+            "Julie Cooke",
+            "HOUGHTON MIFFLIN HARCOURT",
+            "Gregory Peoples",
+            "Tara Diversi",
+            "Mark McKean",
+            "Latika Samalia",
+            "Rebecca Mellifont",
+            "Richard G. Smith undifferentiated",
+            "Gerald J. Tortura",
+            "Sandra R. Grabowski",
+            "Tortora",
+            "Sandra Reynolds Grabowski"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/3810109-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Moralia",
+        "authors": [
+            "Plutarch"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/5788251-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Essays",
+        "authors": [
+            "Francis Bacon"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8236351-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Histoire naturelle",
+        "authors": [
+            "Georges-Louis Leclerc, comte de Buffon",
+            "Georges Louis Leclerc De Buffon"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6130908-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Discours de la méthode",
+        "authors": [
+            "René Descartes"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8236442-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Northern Lights",
+        "authors": [
+            "Philip Pullman"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8747028-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "1st Report [Session 1993-94]",
+        "authors": [
+            "Rand McNally"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/11962006-L.jpg",
+        "genre": "science"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "authors": [
+            "Jane Austen"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14348537-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Alice's Adventures in Wonderland",
+        "authors": [
+            "Lewis Carroll"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "authors": [
+            "Oscar Wilde"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14314858-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Wuthering Heights",
+        "authors": [
+            "Emily Brontë"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12818862-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "A Christmas Carol",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13299222-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Adventures of Huckleberry Finn",
+        "authors": [
+            "Mark Twain"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8157718-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Emma",
+        "authors": [
+            "Jane Austen"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/9278312-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Oliver Twist",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13300802-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Frankenstein or The Modern Prometheus",
+        "authors": [
+            "Mary Shelley"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "A Tale of Two Cities",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13301713-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "The Wonderful Wizard of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/552443-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Sense and Sensibility",
+        "authors": [
+            "Jane Austen"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/9278292-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Treasure Island",
+        "authors": [
+            "Robert Louis Stevenson"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13859660-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Little Women",
+        "authors": [
+            "Louisa May Alcott"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8775559-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Gulliver's Travels",
+        "authors": [
+            "Jonathan Swift"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12717083-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "The Secret Garden",
+        "authors": [
+            "Frances Hodgson Burnett"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12622062-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Don Quijote de la Mancha",
+        "authors": [
+            "Miguel de Cervantes Saavedra"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14428305-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Madame Bovary",
+        "authors": [
+            "Gustave Flaubert"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12993424-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Great Expectations",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13322313-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "A Study in Scarlet",
+        "authors": [
+            "Arthur Conan Doyle"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13405534-L.jpg",
+        "genre": "fiction"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "authors": [
+            "Jane Austen"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14348537-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Alice's Adventures in Wonderland",
+        "authors": [
+            "Lewis Carroll"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Bible",
+        "authors": [
+            "Bible"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12707846-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "authors": [
+            "Oscar Wilde"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14314858-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "A Christmas Carol",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13299222-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Adventures of Huckleberry Finn",
+        "authors": [
+            "Mark Twain"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8157718-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Oliver Twist",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13300802-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Frankenstein or The Modern Prometheus",
+        "authors": [
+            "Mary Shelley"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "A Tale of Two Cities",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13301713-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Wonderful Wizard of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/552443-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Sense and Sensibility",
+        "authors": [
+            "Jane Austen"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/9278292-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Treasure Island",
+        "authors": [
+            "Robert Louis Stevenson"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13859660-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Little Women",
+        "authors": [
+            "Louisa May Alcott"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8775559-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Secret Garden",
+        "authors": [
+            "Frances Hodgson Burnett"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12622062-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Don Quijote de la Mancha",
+        "authors": [
+            "Miguel de Cervantes Saavedra"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14428305-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Madame Bovary",
+        "authors": [
+            "Gustave Flaubert"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12993424-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Great Expectations",
+        "authors": [
+            "Charles Dickens"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13322313-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Art of War",
+        "authors": [
+            "孙武",
+            "Sun Tzu "
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/4849549-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Prince",
+        "authors": [
+            "Niccolò Machiavelli"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12726168-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "The Call of the Wild",
+        "authors": [
+            "Jack London"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12393037-L.jpg",
+        "genre": "history"
+    },
+    {
+        "title": "Alice's Adventures in Wonderland",
+        "authors": [
+            "Lewis Carroll"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Wonderful Wizard of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/552443-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Treasure Island",
+        "authors": [
+            "Robert Louis Stevenson"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13859660-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Gulliver's Travels",
+        "authors": [
+            "Jonathan Swift"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12717083-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Prince",
+        "authors": [
+            "Niccolò Machiavelli"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12726168-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Through the Looking-Glass",
+        "authors": [
+            "Lewis Carroll",
+            "Lewis Carroll",
+            "Lewis Lewis Carroll"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/11272464-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Wind in the Willows",
+        "authors": [
+            "Kenneth Grahame",
+            "Michael Hague",
+            "John Burningham",
+            "David Roberts",
+            "Oxford Editor",
+            "Guo man",
+            "Yang Ma",
+            "Ernest H. Shepard",
+            "Charles Van Sandwyk",
+            "Katie Dicker"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13335427-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Five Children and It",
+        "authors": [
+            "Edith Nesbit"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/28174-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "A Midsummer Night's Dream",
+        "authors": [
+            "William Shakespeare"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/7205924-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Lost World",
+        "authors": [
+            "Arthur Conan Doyle"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8231444-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Marvelous Land of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12648656-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Ozma of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12648657-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Emerald City of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/1473556-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Dorothy and the Wizard in Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12648659-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Lost Princess of Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/854819-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Story of the Amulet",
+        "authors": [
+            "Edith Nesbit"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/13241470-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Complete Life and Adventures of Santa Claus",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/1979059-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Alice's Adventures in Wonderland / Through the Looking Glass",
+        "authors": [
+            "Lewis Carroll"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8595966-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Road to Oz",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8243922-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "The Sea Fairies",
+        "authors": [
+            "L. Frank Baum"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/1814237-L.jpg",
+        "genre": "fantasy"
+    },
+    {
+        "title": "Bible",
+        "authors": [
+            "Bible"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12707846-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Gulliver's Travels",
+        "authors": [
+            "Jonathan Swift"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12717083-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Don Quijote de la Mancha",
+        "authors": [
+            "Miguel de Cervantes Saavedra"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14428305-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Divina Commedia",
+        "authors": [
+            "Dante Alighieri"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/11621024-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Anne of Green Gables",
+        "authors": [
+            "Lucy Maud Montgomery"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14641084-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Narrative of the life of Frederick Douglass",
+        "authors": [
+            "Frederick Douglass"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8247724-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Twelve years a slave",
+        "authors": [
+            "Solomon Northup"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/14856045-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Captains Courageous",
+        "authors": [
+            "Rudyard Kipling"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12819857-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "The Canterbury Tales",
+        "authors": [
+            "Geoffrey Chaucer",
+            "John E. Cunningham",
+            "Peter Ackroyd",
+            "Ted Stearn",
+            "V. A. Kolve",
+            "Glending Olson"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/5767180-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Leaves of Grass",
+        "authors": [
+            "Walt Whitman"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/9000447-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Julius Caesar",
+        "authors": [
+            "William Shakespeare"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/7901303-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Dubliners",
+        "authors": [
+            "James Joyce"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8216412-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "The Pilgrim's Progress",
+        "authors": [
+            "John Bunyan"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8229224-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "The Autobiography of Benjamin Franklin",
+        "authors": [
+            "Benjamin Franklin"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/5647361-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "The Second Jungle Book",
+        "authors": [
+            "Rudyard Kipling"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/2140514-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Sonnets",
+        "authors": [
+            "William Shakespeare"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/8222090-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "The Tenant of Wildfell Hall",
+        "authors": [
+            "Anne Brontë"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/1023552-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Ab urbe condita",
+        "authors": [
+            "Titus Livius"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6657951-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Orthodoxy",
+        "authors": [
+            "Gilbert Keith Chesterton",
+            "Damian Andre",
+            "Catholic Way Publishing Staff",
+            "Lucio Marcetti"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/6268135-L.jpg",
+        "genre": "biography"
+    },
+    {
+        "title": "Saint Francis of Assisi",
+        "authors": [
+            "Gilbert Keith Chesterton",
+            "Doyle Kim",
+            "Chesterton Books Staff",
+            "S. C. G. Jerome"
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/502618-L.jpg",
+        "genre": "biography"
+    }
+]
